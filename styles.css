@@ -1,0 +1,238 @@
+.page1 {
+    background-color: blue;
+    background-image: url("./assets/img/main.jpg");
+    font-family: "raleway";
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+img {
+    height: 100vh;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.nav-brand > a {
+    font-size: 2em;
+}
+
+.nav-link {
+    display: inline;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 50px;
+    margin-top: 0;
+    opacity: 0;
+    animation: fadeIn 0.75s 0.5s linear forwards;
+}
+
+.front-ad {
+    width: 500px;
+    margin: auto;
+    padding: 250px 0;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: landing 0.75s 0.75s linear forwards;
+
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+}
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes landing {
+    0%{
+        transform: translate(0, 50px);
+        opacity: 0;
+    }
+    /* 50%{
+        opacity: 50%;
+    } */
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* Page 2 Stuff */
+
+
+.page2Header {
+    font-family: "raleway";
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+
+hr {
+    color: indigo;
+    border-bottom: 2px solid indigo;
+    width: 60%;
+}
+
+.imageGallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+    padding-left: 0;
+}
+
+.imageGallery > li {
+    list-style-type: none;
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.smalls {
+    flex: 0 0 30%
+}
+
+.bigs {
+    flex: 0 0 60%;
+}
+
+@media screen and (max-width: 900px) {
+    .imageGallery > li {
+        width: 100%;
+
+    }
+    .smalls, .bigs {
+        flex-grow: 1;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .imageGallery > li {
+        width: 50%
+    }
+    .smalls, .bigs {
+        flex-basis: 45%
+    }
+}
+
+/* page 3 stuff */
+
+ul {
+    list-style-type: none;
+}
+
+i {
+    font-size: 75px;
+    color: indigo;
+}
+
+.page3 {
+    /* height: 1300px; */
+    /* width: 100vw; */
+    background-color: #d3d3d3;
+}
+.page3Header {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.packageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.packageGrid > li {
+    font-family: "raleway";
+    font-size: 18px;
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .packageGrid > li {
+        width: 100%;
+    }
+}
+
+/* page 4 */
+
+.page4 {
+    font-family: "raleway";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page4Header {
+    /* text-align: center; */
+    padding-bottom: 90px;
+}
+
+.page4 > p {
+    font-size: 18px;
+    /* width: 60%; */
+}
+
+.page4 > h6 {
+    font-size: 14px;
+}
+
+.page4 > p, h6 {
+    text-align: center;
+    width: 60%;
+}
+
+/* page 5 */
+
+.page5 {
+    background-color: #d3d3d3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+}
+
+.page5>* {
+    flex: 0 1 51%;
+    margin: 20px auto;
+    padding: 0 0;
+}
+
+.page5 > h1 {
+    text-align: center;
+}
+
+.page5 > hr {
+    width: 20%;
+}
